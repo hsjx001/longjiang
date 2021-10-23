@@ -1,0 +1,354 @@
+.continer {
+	height: 1000px;
+	padding: 10px 60px;
+}
+
+.continer>* {
+
+	float: left;
+}
+.continer .left dl dt{
+	font-weight: bold;
+	padding-left: 10px;
+	font-size: 20px;
+	line-height: 40px;
+	color: #FFFFFF;
+	background-color: #2f6ebb;
+}
+.continer .center dl dt{
+	margin-bottom: 15px;
+	font-weight: bold;
+	padding-left: 10px;
+	font-size: 20px;
+	line-height: 40px;
+	color: #FFFFFF;
+	background-color: #2f6ebb;
+}
+.continer .left,
+.continer .right {
+	height: 970px;
+	background-color: #eef4fb;
+	width: 307.5px;
+}
+
+.continer .center {
+	padding: 0px 15px;
+	width: 615px;
+
+}
+
+/*center top*/
+.slideGroup {
+	width: 585px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+.slideGroup .parHd {
+	height: 40px;
+	line-height: 40px;
+	background: #0d6da5;
+	padding: 0 20px;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+
+.slideGroup .parHd ul {
+	font-size: 18px;
+	float: left;
+	position: absolute;
+	left: 180px;
+	/* top: -1px; */
+	height: 32px;
+}
+
+.slideGroup .parHd ul li {
+	float: left;
+	padding: 7px 15px;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+.slideGroup .parHd ul li.on {
+	height: 40px;
+	background: #004c6f;
+	border: 1px solid #ddd;
+	border-bottom: 2px solid #fff;
+}
+
+.slideGroup .slideBox {
+	overflow: hidden;
+	zoom: 1;
+	width: 585px;
+	padding: 10px 0 10px 53px;
+	position: relative;
+}
+
+.slideGroup .sPrev,
+.slideGroup .sNext {
+	position: absolute;
+	left: 5px;
+	top: 10px;
+	display: block;
+	width: 30px;
+	height: 94px;
+	border: 1px solid #ddd;
+	background: url(../images/icoLeft.gif) center center no-repeat #f4f4f4;
+}
+
+.slideGroup .sNext {
+	left: auto;
+	right: 5px;
+	background: url(../images/icoRight.gif) center center no-repeat #f4f4f4;
+}
+
+.slideGroup .sPrev:hover,
+.slideGroup .sNext:hover {
+	border-color: #f60;
+}
+
+.slideGroup .parBd ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.slideGroup .parBd ul li {
+	margin: 0 8px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	text-align: center;
+}
+
+.slideGroup .parBd ul li .pic {
+	text-align: center;
+}
+
+.slideGroup .parBd ul li .pic img {
+	width: 146px;
+	height: 100px;
+	display: block;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+
+.slideGroup .parBd ul li .pic a:hover img {
+	border-color: #999;
+}
+
+.slideGroup .parBd ul li .title {
+	line-height: 24px;
+}
+
+/*left*/
+.txtMarquee-left {
+	width: 307.5px;
+	position: relative;
+	border: 1px solid #ccc;
+}
+
+.txtMarquee-left .hd {
+	overflow: hidden;
+	height: 30px;
+	background: #f4f4f4;
+	padding: 0 10px;
+}
+
+.txtMarquee-left .hd .prev,
+.txtMarquee-left .hd .next {
+	display: block;
+	width: 5px;
+	height: 9px;
+	float: right;
+	margin-right: 5px;
+	margin-top: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	background: url(../images/icoLeft.gif) no-repeat;
+}
+
+.txtMarquee-left .hd .next {
+	background: url(../images/icoRight.gif) no-repeat;
+}
+
+.txtMarquee-left .bd {
+	padding: 10px;
+}
+
+.txtMarquee-left .bd .tempWrap {
+	width: 287.5px !important;
+}
+
+/* 用 !important覆盖SuperSlide自动生成的宽度，这样就可以手动控制可视宽度。 */
+.txtMarquee-left .bd ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.txtMarquee-left .bd ul li {
+	margin-right: 20px;
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	text-align: left;
+	_display: inline;
+	width: auto !important;
+}
+
+/* 用 width:auto !important 覆盖SuperSlide自动生成的宽度，解决文字不衔接问题 */
+.txtMarquee-left .bd ul li span {
+	color: #999;
+}
+
+/*center center*/
+.outBox {
+	width: 585px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+.outBox .hd {
+	font-size: 18px;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+	background: #0d6da5;
+	padding: 0 20px;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+
+.outBox .hd ul {
+	
+	float: left;
+	position: absolute;
+	left: 180px;
+	/* top: -1px; */
+	height: 40px;
+	line-height: 40px;
+}
+
+.outBox .hd ul li {
+	
+	float: left;
+	padding: 7px 15px;
+	cursor: pointer;
+}
+
+.outBox .hd ul li.on {
+	height: 40px;
+	background: #004c6f;
+	border: 1px solid #ddd;
+	border-bottom: 2px solid #fff;
+}
+
+.inBox {
+	padding: 10px 15px 0 15px;
+}
+
+.inBox .inHd {
+	font-size: 18px;
+	height: 30px;
+	line-height: 24px;
+	border-bottom: 1px solid #ccc;
+	padding: 0;
+	padding-left: 166px;
+	/* padding: 0 80px; */
+}
+
+.inBox .inHd ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.inBox .inHd ul li {
+	height: 30px;
+	width: 74px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+}
+
+.inBox .inHd ul li.on {
+	background: #004c6f;
+	color: #fff;
+}
+
+.inBox .inBd ul {
+	margin-left: 30px;
+	padding: 15px;
+	zoom: 1;
+	overflow: hidden;
+}
+
+.inBox .inBd li {
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.inBox .inBd li .date {
+	float: right;
+	color: #000000;
+}
+
+.continer .center_3 dd > *{
+	float: left;
+}
+.continer .center_3 dd img{
+	margin: 30px 7px 0px 30px;
+	width: 150px ;
+	height: 150px;
+	animation: all 0.5s;
+	cursor: pointer;
+}
+.continer .center_3 dd img:hover{
+	transform: scale(1.4);
+	cursor: pointer;
+}
+.continer .right hr {
+	background-color: #2f6ebb;
+	height: 15px;
+}
+
+.continer .right_1 dt {
+	border-bottom: 1px dashed #DCDCDC;
+	padding-top: 8px;
+	margin: 0px 10px;
+	height: 40px;
+}
+
+.continer .right_1 dt a {
+	font-weight: bold;
+	margin: 30px 0px 0px 110px;
+	color: #2e67c7;
+}
+
+.continer .right_1 .txtMarquee-top .infoList li::before {
+	content: '';
+	display: inline-block;
+	margin-right: 5px;
+	width: 0;
+	height: 0;
+	border-width: 4px;
+	border-style: solid;
+	border-color: transparent transparent transparent #fc7734;
+}
+
+.continer .right_2 img {
+	
+	margin-top: 5px;
+	display: block;
+	
+}
+
+.continer .right_2 dd ul li {
+	margin-left: 5px;
+
+	line-height: 27px;
+}
+
+.continer .right_2_last>* {
+	float: left;
+}
